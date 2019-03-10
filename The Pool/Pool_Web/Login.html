@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Signup to Pool</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("Images/hostel.png");
+            color: white;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #logo {
+            margin-top: 18px;
+        }
+
+        ::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: white;
+            opacity: 0.6;
+            /* Firefox */
+            font-family: 'Acme', sans-serif;
+        }
+
+        :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: white;
+            font-family: 'Acme', sans-serif;
+        }
+
+        ::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: white;
+            font-family: 'Acme', sans-serif;
+        }
+
+        h1 {
+            font-size: 35px;
+            font-family: 'PT Serif', serif;
+            font-weight: 500;
+            margin-top: 30px;
+        }
+
+        .interests{
+            width: 250px;
+            background-color: rgba(250, 235, 215, 0);
+            color: white;
+            font-family: 'Acme', sans-serif;
+        }
+
+        .interests:focus {
+            color: black;
+        }
+
+        .theinput {
+            border: 0;
+            outline: 0;
+            background: transparent;
+            border-bottom: 1px solid white;
+            width: 250px;
+            -webkit-transition: all 0.30s ease-in-out;
+            -moz-transition: all 0.30s ease-in-out;
+            -ms-transition: all 0.30s ease-in-out;
+            -o-transition: all 0.30s ease-in-out;
+            color: white;
+            text-align: center;
+            font-family: 'Acme', sans-serif;
+        }
+
+        .theinput:focus {
+            width: 300px;
+            border-bottom: 2px solid white;
+        }
+
+        .content {
+            padding-bottom: 15px;
+        }
+
+        form {
+            margin-top: 10px;
+            width: 400px;
+            height: 540px;
+            background-color: rgba(0, 0, 0, 0.507);
+            border-radius: 10px;
+            padding-top: 0.1px;
+        }
+
+        button {
+            font-family: 'Acme', sans-serif;
+            width: 250px;
+            height: 50px;
+            text-align: center;
+            color: white;
+            background-color: rgba(255, 215, 0, 0);
+            border-color: white;
+            border-width: 1px;
+            border-right: 1px solid;
+            border-bottom: 1px solid;
+            border-radius: 50px;
+            -webkit-transition: all 0.30s ease-in-out;
+            -moz-transition: all 0.30s ease-in-out;
+            -ms-transition: all 0.30s ease-in-out;
+            -o-transition: all 0.30s ease-in-out;
+        }
+
+        button:hover {
+            background-color: white;
+            color: black;
+            border-color: white;
+            border-width: 1px;
+            cursor: pointer;
+            -webkit-transition: all 0.30s ease-in-out;
+            -moz-transition: all 0.30s ease-in-out;
+            -ms-transition: all 0.30s ease-in-out;
+            -o-transition: all 0.30s ease-in-out;
+        }
+
+        button:focus {
+            outline: 0;
+            box-shadow: 0 0 5px rgba(255, 255, 255, 1);
+            border: 1px solid rgba(255, 255, 255, 1);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+                <img class="img-fluid" width="230" src="Images/pool.jpeg">
+            </div>
+            <div class="col-9">
+                <center>
+                    <div id="content">
+                        <br><br>
+                        <form method="post">
+                            <h1>Sign-up</h1>
+                            <br><br>
+                            <fieldset>
+                                <input type="text" placeholder="Name" onfocus="this.placeholder = ''"
+                                    onblur="this.placeholder = 'Name'" class="theinput" required>
+                                <br><br>
+                                <input type="email" placeholder="email" onfocus="this.placeholder = ''"
+                                    onblur="this.placeholder = 'email'" class="theinput" required>
+                                <br><br>
+                                <input type="password" placeholder="Password" onfocus="this.placeholder = ''"
+                                    onblur="this.placeholder = 'Password'" class="theinput" required>
+                                <br><br>
+                                <select class="form-control interests">
+                                        <option value="" disabled selected>Hostel?</option>
+                                        <option>KP-3</option>
+                                        <option>KP-4</option>
+                                        <option>KP-5</option>
+                                        <option>KP-6</option>
+                                        <option>KP-7</option>
+                                        <option>QC-3</option>
+                                        <option>QC-4</option>
+                                        <option>QC-5</option>
+                                        <option>QC-6</option>
+                                    </select>
+                                <br>
+                                <select class="form-control interests">
+                                    <option value="" disabled selected>Your Interests?</option>
+                                    <option>Singing</option>
+                                    <option>Playing Guitar</option>
+                                    <option>Coding</option>
+                                    <option>Gaming</option>
+                                    <option>Photography</option>
+                                    <option>Writing</option>
+                                    <option>Dancing</option>
+                                </select>
+                                <br><br>
+                                <button onclick="location.href='file:///C:/Users/KIIT/Desktop/The%20Pool/MyPool.html';">Sign In</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

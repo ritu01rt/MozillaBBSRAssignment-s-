@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pool Chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        ::placeholder {
+            color: white;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        .bubble {
+            border-style: solid;
+            border-color: white;
+            border-width: 1px;
+            border-radius: 25px;
+            padding: 10px;
+        }
+
+        .praddy {
+            background-color: white;
+        }
+
+        .neel {
+            background-color: white;
+            color: black;
+            float: right;
+        }
+    </style>
+</head>
+
+<body style="background-image: url('Images/chat.jpg'); background-size: cover; margin-top: 10px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <img class="img-fluid" height="20" src="Images/pool.jpeg" >
+            </div>
+            <div class="col-9">
+                <div class="row">
+                    <div style="background-image: linear-gradient(rgba(255, 255, 255, 0.527), rgba(255, 255, 255, 0)); border-top-left-radius: 10px; border-top-right-radius: 10px;"
+                        class="col-12">
+                        <img src="Images/praddy.jpeg" class="img-fluid img-thumbnail"
+                            style="cursor: pointer; border-radius:100%; height: 60px; margin-bottom: 10px;">
+                        <h1 style="font-family: 'Oswald', sans-serif; color:white; display: inline;">Praddyum Verma</h1>
+                        <i class="fas fa-ellipsis-v fa-2x"
+                            style="float: right; margin-top: 15px; display: inline; color: white;"></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p style="width: 280px;" class="bubble praddy">
+                            <b>Praddyum:</b> Hi there, how are you?
+                        </p>
+                        <p style="width: 280px;" class="bubble neel">
+                            <b>Neel:</b> I'm fine, thank you. I see, you are very good at C++.
+                        </p><br><br><br><br>
+                        <p style="width: 320px;" class="bubble praddy">
+                           <b>Praddy:</b> Oh yes, I think we can work over this project together of Gauss ELimination.
+                        </p>
+                        <p style="width: 320px;" class="bubble neel">
+                            <b>Neel:</b> Sure we can, I am stuck over this JS implementation for a project I am working rn. Can you help me?
+                        </p><br><br><br><br>    
+                        <p style="width: 320px;" class="bubble praddy">
+                            <b>Praddyum:</b> Of course I can, let's meet at my room and discuss over it? ^_^
+                        </p>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div style="height: 60px; background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.527)); border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;"
+                        class="col-12">
+                        <input type="text" placeholder="Say Hi to Praddyum!" class="col-11"
+                            style="display: inline; color:white; padding-top: 8px; padding-bottom: 8px; background-color: rgba(255, 255, 255, 0); border-style:solid; border-width: 1px; border-color: white; border-radius: 20px;">
+                            <i class="fas fa-angle-double-right fa-2x mt-2" style="display: inline; cursor: pointer; margin: 0px; padding: 5px; color: white; border-radius: 100%; border-style: solid; border-color: white; border-width: 1px;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
